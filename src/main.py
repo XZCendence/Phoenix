@@ -43,9 +43,13 @@ def bringUpDeauthAgentWindow():
     print("Bringing up deauth agent")
     if(1):
         with dpg.window(label="Deauth Agent", pos=(300,0), width=450, height=320) as wDeauthAgent:
-            dpgWindowStack.append(wDeauthAgent)
-            dpg.add_text(default_value="Select or enter a device target (station/client)")
-            dpg.add_input_text(hint="Enter a mac address or device GUID")
+            dpgWindowStack.append(wDeauthAgent) #Add the window to the window stack
+            with dpg.tab_bar(label="tb1") as tb1:
+                with dpg.tab(label="Targets"):
+                    dpg.add_text(default_value="Enter a station's mac address:")
+                    dpg.add_input_text(hint="aa:bb:cc:dd:ee:ff")
+                with dpg.tab(label="Access Points"):
+                    dpg.add_text(default_value="APs")
 
 def defaultLayout():
     print("Layout: Default")

@@ -5,7 +5,7 @@ import dearpygui.dearpygui as dpg
 
 #baseThemeColor = (230,150,10)  #True Yellow
 #baseThemeColor = (255,100,0)   #Red-Orange
-baseThemeColor=(220, 0, 255)    #Purple
+baseThemeColor=(200, 0, 255)    #Purple
 
 #Set up a global theme using the base color
 def setBaseColorTheme():
