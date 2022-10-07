@@ -42,7 +42,7 @@ def bringUpInterfaceSetup():
 def bringUpDeauthAgentWindow():
     print("Bringing up deauth agent")
     if(1):
-        with dpg.window(label="Deauth Agent", pos=(300,0), width=450, height=320) as wDeauthAgent:
+        with dpg.window(label="Deauthentication Agent", pos=(300,0), width=450, height=320) as wDeauthAgent:
             dpgWindowStack.append(wDeauthAgent) #Add the window to the window stack
             with dpg.tab_bar(label="tb1") as tb1:
                 with dpg.tab(label="Targets"):
